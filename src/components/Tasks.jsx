@@ -22,10 +22,10 @@ function Tasks({list,setList}) {
 
 
   let ffalse = "flex justify-between p-4 items-center rounded bg-transparent"
-  let ttrue = "flex justify-between p-4 items-center rounded bg-zinc-600 text-white line-through"
+  let ttrue = "flex justify-between p-4 items-center rounded bg-[#5f0f40] text-white line-through"
   return (
     <div className='w-1/2 mx-auto'>
-      <ul className='unstyled mt-3'>
+      <ul className='unstyled mt-3 flex flex-col gap-3'>
         {list.map((item,index) => (
           <li key={index} className={item.isCompleted ? ttrue : ffalse}>
             <span className='text-3xl'>{item.text}</span>
